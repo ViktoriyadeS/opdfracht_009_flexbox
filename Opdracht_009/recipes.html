@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Recepten </title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Viktoriya's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a> </li>
+                <li><a href="blog.html"> Blog </a> </li>
+                <li><a href="about.html"> About </a> </li>
+                <li><a class="active" href="recipes.html"> Share your recipes </a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form name="mijn-recepten" method="POST" data-netlify="true">
+            <p>
+                <label for="name"><strong>Name: </strong><input type="text" name="name" id="name" required /></label>
+            </p>
+            <p>
+                <label for="email"><strong>Email:</strong> <input type="email" name="email" id="email"
+                        required /></label>
+            </p>
+            <p>
+                <label for="phone"><strong>Phone:</strong></label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <p>
+                <label for="age"><strong>Age:</strong> <input type="age" name="age" id="age" min="1" max="200"
+                        step="5" /></label>
+            </p>
+            <p>
+                <label for="date"><strong>Birthday:</strong> <input type="date" name="date" id="date" /></label>
+            </p>
+            <p> <strong> Gender:</strong>
+                <label for="gender">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="gender">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="gender">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </p>
+            <p> <strong> Favorite Cuisine:</strong>
+
+
+                <label for="fav-cuisine">French</label>
+                <input type="checkbox" name="fav-cuisine[]" value="french" id="french">
+
+
+                <label for="fav-cuisine">Italian</label>
+                <input type="checkbox" name="fav-cuisine[]" value="italian" id="italian">
+
+
+                <label for="fav-cuisine">Spanish</label>
+                <input type="checkbox" name="fav-cuisine[]" value="spanish" id="spanish">
+
+                <label for="fav-cuisine">Arabic</label>
+                <input type="checkbox" name="fav-cuisine[]" value="arabic" id="arabic">
+            </p>
+
+            <p>
+                <label for="favcolor"><strong>Select your favourite apron color:</strong></label>
+                <input type="color" name="favcolor" id="color">
+            </p>
+
+
+            <p>
+                <label for="message"><strong>Biography: </strong></label><br>
+                <textarea name="message" id="message"></textarea>
+            </p>
+            <p>
+                <label for="file"><strong>Upload recipe:</strong></label>
+                <input type="file" name="file" id="file">
+            </p>
+            <p>
+                <label for="url"><strong>Website:</strong><input type="url" name="url" id="url"></label>
+            </p>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+
+    </main>
+
+
+    <footer>
+        <p> Copyright *Viktoriya de Sterke* 2021</p>
+    </footer>
+
+</body>
+
+</html>
